@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("hello world"),function(){const e=document.getElementById(e),t=(document.createElement("header"),document.createElement("main"));document.createElement("div"),e.appendChild(t),t.textContent="em"}()})();
+(()=>{"use strict";!function(){document.createElement("h1");const e=document.createElement("div");document.createElement("div"),content.appendChild(e),e.textContent="homePage"}()})();

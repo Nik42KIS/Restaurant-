@@ -1,5 +1,14 @@
 
-import { renderPage } from "./renderPage";
+import { homePage } from "./homePage/homePage"
 
-console.log('hello world');
-renderPage()
+
+
+
+function renderPage(page){
+    const content = document.getElementById('content');
+    content.innerHTML = page()
+}
+function app(){
+    
+}
+homePage()
