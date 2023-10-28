@@ -1,8 +1,7 @@
 import { contactPage } from './contactPage/contactPage';
 import { homePage } from './homePage/homePage';
 import { menuPage } from './menuPage.js/menuPage';
-import './style.css'
-
+import './style.css';
 
 function app() {
   const content = document.getElementById('content');
@@ -19,23 +18,28 @@ function app() {
   header.appendChild(homeLink);
   header.appendChild(menuLink);
   header.appendChild(contactLink);
+
   homeLink.textContent = 'HOME ';
   menuLink.textContent = 'MENU ';
   contactLink.textContent = 'CONTACT';
 
+    homeLink.classList.add('linkHome', 'link')
+    menuLink.classList.add('linkMenu', 'link')
+    contactLink.classList.add('linkContact', 'link')
+
   function renderPage(page) {
     main.innerHTML = '';
-    main.appendChild(page())
+    main.appendChild(page());
   }
-  homeLink.addEventListener('click', ()=>{
-    renderPage(homePage)
-  })
-  menuLink.addEventListener('click', ()=>{
-    renderPage(menuPage)
-  })
-  contactLink.addEventListener('click', ()=>{
-    renderPage(contactPage)
-  })
+  homeLink.addEventListener('click', () => {
+    renderPage(homePage);
+  });
+  menuLink.addEventListener('click', () => {
+    renderPage(menuPage);
+  });
+  contactLink.addEventListener('click', () => {
+    renderPage(contactPage);
+  });
 
   console.log('212122121212');
 }
