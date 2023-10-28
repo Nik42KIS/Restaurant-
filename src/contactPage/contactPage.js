@@ -1,9 +1,10 @@
 export function contactPage(){
 
     
-    const homeTitle = document.createElement('h1');
-    const main = document.createElement('div');
+    const contactTitle = document.createElement('h1');
+    const contactWrap = document.createElement('div');
     const container = document.createElement('div');
-    content.appendChild(main)
-    return main.textContent = 'contactPage'
+    contactWrap.appendChild(contactTitle)
+    contactTitle.textContent = 'CONTACT'
+    return contactWrap
 }

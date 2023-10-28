@@ -1,9 +1,10 @@
 export function menuPage(){
 
     
-    const homeTitle = document.createElement('h1');
-    const main = document.createElement('div');
+    const menuTitle = document.createElement('h1');
+    const menuWrap = document.createElement('div');
     const container = document.createElement('div');
-    content.appendChild(main)
-    return main.textContent = 'menuPage'
+    menuWrap.appendChild(menuTitle)
+    menuTitle.textContent = 'MENU'
+    return menuWrap
 }
