@@ -31,6 +31,7 @@ function app() {
     main.innerHTML = '';
     main.appendChild(page());
   }
+  renderPage(homePage)
   homeLink.addEventListener('click', () => {
     renderPage(homePage);
   });
