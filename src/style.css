@@ -45,7 +45,7 @@ main{
     /* margin-bottom: 100px; */
     
 }
-.homePage{
+.homePage, .menuPage{
     background-color: rgb(209, 209, 209);
     width:900px;
     margin-top: 50px;
@@ -100,7 +100,40 @@ h1{
     right: -200px;
     /* justify-content: start; */
 }
-/* 
-footer{
-    margin-top: 100px;
-} */
+
+.menuPage{
+    display: grid;
+    grid-template-columns: 130px 1fr 130px;
+}
+.menu_title{
+    text-align: center;
+    grid-column: 1/4;
+}
+.item_wrap{
+    display: grid;
+    grid-column: 2/3;
+    background-color: rgb(183, 183, 183);
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 30px;
+    grid-template-columns: 150px 1fr;
+    margin-top: 40px;
+    gap: 10px;
+    /* justify-content: space-around; */
+
+}
+.menu_item_img{
+    height: 400px;
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 30px;
+    /* grid-column: 2/3; */
+}
+
+.menu_item_title{
+    font-size: 2.5rem;
+}
+.menu_item_price{
+    font-size: 2.5rem;
+    /* color:red; */
+}
